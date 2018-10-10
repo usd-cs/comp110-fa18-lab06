@@ -112,10 +112,11 @@ def plot_histogram():
 
     # make a histogram of the data
     num_bins = 10
-    plt.hist(x, num_bins, facecolor='blue', alpha=0.5)
+    plt.hist(x, num_bins, facecolor='blue', edgecolor='black', alpha=0.5)
     plt.xlabel("List Price (in $1000)")
     plt.title("Frequency of list prices for a new GMC pickup")
     plt.show()
+
 
 def get_belmont_times(data_file):
     """
